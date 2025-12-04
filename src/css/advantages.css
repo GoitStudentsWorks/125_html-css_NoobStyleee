@@ -1,5 +1,44 @@
-@media screen and (min-width: 768px) {
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 64px 32px;
 }
 
-@media screen and (min-width: 1440px) {
+.advantages-block-text {
+}
+.advantages-subtitle {
+  margin-bottom: 12px;
+}
+.advantages-title {
+  margin-bottom: 20px;
+}
+.advantages-text {
+  margin-bottom: 48px;
+}
+.advantages-block-list {
+}
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.advantages-item {
+}
+.advantages-picture {
+  margin-bottom: 32px;
+}
+.advantages-item-title {
+  margin-bottom: 24px;
+}
+.advantages-item-text {
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1158px) {
 }
