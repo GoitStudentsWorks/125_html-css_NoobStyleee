@@ -1,3 +1,56 @@
+/* #region footer mobile */
+
+.footer {
+background-color: aqua;
+}
+
+.footer-nav-container {
+}
+
+.footer-logo-container {
+    
+}
+
+.footer-nav-list {
+
+}
+
+.footer-list-item {
+
+}
+
+.footer-list-link {
+
+}
+
+.footer-social-list {
+
+}
+
+.social-list-item {
+
+}
+
+.social-icon-footer {
+}
+
+.footer-contacts-list {
+
+}
+
+.footer-contacts-item {
+
+}
+
+.footer-contacts-link {
+
+}
+
+
+
+/* #endregion footer mobile */
+
+
 @media screen and (min-width: 768px) {
 }
 
