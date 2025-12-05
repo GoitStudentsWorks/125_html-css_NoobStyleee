@@ -54,7 +54,52 @@
 
 
 @media screen and (min-width: 768px) {
+    .about {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/about-tablet@1x.jpg');
+        padding: 80px 32px;
+        min-height: 325px;
+    }
+
+    .about-text-one {
+        margin-bottom: 16px;
+    }
+
+    .about-text-two {
+        margin-bottom: 24px;
+    }
+
+    .about-description {
+        font-size: 18px;
+        max-width: 573px;
+    }
+
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+.about {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/about-tablet@2x.jpg');
+  }
 }
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .about {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/about-tablet@1x.jpg');
+        padding: 112px 64px;
+        min-height: 462px;
+    }
+
+    .about-text-two {
+        font-size: 56px;
+        max-width: 629px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+.about {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/about-desktop@2x.jpg');
+  }
+}  
