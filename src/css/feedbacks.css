@@ -11,7 +11,7 @@
     line-height: 1.2;
     letter-spacing: 0.01em;
     text-align: center;
-    color: var(--color-scheme-1-text);
+    color: #030a06;
     margin-bottom: 32px;
 }
 
@@ -21,13 +21,12 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 40px;
     max-width: 1300px;
 }
 
 .review-item {
-    width: 310px;
-    height: 182px;
+    min-width: 310px;
 }
 
 .star-icon {
@@ -38,31 +37,54 @@
 }
 
 .review-author {
-    font-family: "fira-sans", SemiBold;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 600;
     font-size: 16px;
-    line-height: 160%;
-    color: var(--color-scheme-1-text);
+    line-height: 1.6;
+    color: #030a06;
 }
 
 .review-text {
     font-family: "Comfortaa", Bold;
     font-weight: 700;
     font-size: 20px;
-    line-height: 140%;
+    line-height: 1.4;
     letter-spacing: 0.01em;
-    color: var(--color-scheme-1-text);
-    margin-bottom: 24px;
+    color: #030a06;
+    margin-bottom: 12px;
 }
+
+    .review-author-sergyi,
+    .review-author-olena {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #030a06;
+    }
 
 /* планшет */
 @media screen and (min-width: 768px) {
+
+    .feedbacks {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .feedbacks 
+    .container {
+        padding-bottom: 64px;
+        padding-top: 64px;
+    }
+
     .reviews-list {
         grid-template-columns: repeat(2, 1fr);
     }
     
     .review-text {
         font-size: 20px;
+        min-width: 340px;
+        margin-bottom: 24px;
     }
 
     .review-author {
@@ -76,15 +98,30 @@
 
 /* десктоп */
 @media screen and (min-width: 1440px) {
-    .reviews-list {
-        grid-template-columns: repeat(3, 1fr);
+
+    .feedbacks 
+    .container {
+        padding-bottom: 64px;
+        padding-top: 64px;
+    }
+
+    .feedbacks {
         padding-left: 64px;
         padding-right: 64px;
+    }
+
+    .reviews-list {
         display: flex;
+        gap: 24px;
+        align-items: first baseline;
+        grid-template-columns: none;
     }
 
     .review-text {
         font-size: 20px;
+        margin-bottom: 24px;
+        min-width: 300px;
+        max-width: 310px;
     }
 
     .review-author {
@@ -93,9 +130,18 @@
     
     .reviews-title {
         width: 560px;
-        height: 116px;
         font-size: 48px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .review-author-sergyi,
+    .review-author-olena {
+        margin-top: 52px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #030a06;
     }
 }
