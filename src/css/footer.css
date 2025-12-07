@@ -2,7 +2,7 @@
 
 .footer {
 background-color: #75D281;
-padding: 48px 0;
+padding: 48px 20px;
 
 width: 100%;
 }
@@ -43,6 +43,7 @@ align-items: center;
 }
 
 .footer-list-link {
+
 font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -158,5 +159,9 @@ height: 40px;
             width: 24px;
             height: 24px;
         } 
+        .footer-list-link {
+            
+        }
 
 }
+
