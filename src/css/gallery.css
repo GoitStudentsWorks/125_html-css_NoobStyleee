@@ -1,5 +1,6 @@
 .gallery {
   background-color: #ebf8ed;
+  padding: 32px 0 32px;
 }
 
 .gallery-htwo {
@@ -22,10 +23,10 @@
 }
 
 .gallery-text {
-  padding: 32px 0 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 32px;
 }
 
 .container {
@@ -35,7 +36,6 @@
 .gallery-grid {
   display: grid;
   gap: 16px;
-  padding-bottom: 32px;
   grid-template-columns: 1fr;
 }
 
@@ -49,6 +49,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .gallery {
+    padding: 64px 0 64px;
+  }
   .container {
     max-width: 768px;
   }
@@ -88,9 +91,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .gallery-text {
-    padding-top: 64px;
-  }
   .gallery-htwo {
     font-size: 48px;
   }
@@ -113,7 +113,6 @@
       'a c d'
       'b c d';
     gap: 24px;
-    padding-bottom: 64px;
   }
   .gallery-img-first {
     grid-area: a;
