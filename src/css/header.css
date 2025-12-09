@@ -4,6 +4,11 @@
 }
 .header {
   background-color: #75d281;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 .header-container {
   display: flex;
@@ -102,7 +107,7 @@
 
 @media screen and (min-width: 1440px) {
   .header-container {
-    padding: 13.3px 64px;
+    padding: 12.3px 64px;
   }
   .header-logo-svg {
     width: 106px;
@@ -111,102 +116,62 @@
   .header-list {
     display: flex;
     align-items: center;
+    gap: 32px;
+    cursor: pointer;
   }
-  .header-link {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #030a06;
+  .header-nav {
+    display: block;
   }
-
   .header-address {
     display: flex;
   }
   .btn-burger {
     display: none;
   }
-  .header-nav {
-    display: block;
+  .header-item,
+  .header-item-address {
+    position: relative;
   }
-  .header-list {
-    display: flex;
-    gap: 32px;
-    cursor: pointer;
-  }
-  .header-item {
-    border-bottom: 1px solid transparent;
-    height: 26px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header-link {
-    font-family: 'Fira Sans', sans-serif;
+  .header-link,
+  .header-tel-email {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+    color: #030a06;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: #030a06;
+    text-decoration: none;
+    font-style: normal;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header-item:hover,
-  .header-item:focus {
-    border-bottom-color: #030a06;
+  .header-link::after,
+  .header-tel-email::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background-color: #030a06;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header-item:active {
-    border-bottom-color: #3ac04c;
+  .header-link:hover::after,
+  .header-link:focus::after,
+  .header-tel-email:hover::after,
+  .header-tel-email:focus::after {
+    width: 100%;
   }
-  .header-item:active .header-link,
-  .header-link:active {
+  .header-link:active,
+  .header-tel-email:active {
     color: #3ac04c;
+  }
+  .header-item:active .header-link::after,
+  .header-tel-email:active::after {
+    background-color: #3ac04c;
   }
   .header-list-address {
     display: flex;
     gap: 16px;
-  }
-  .header-item-address {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #030a06;
-    font-style: normal;
-    border-bottom: 1px solid transparent;
-    height: 26px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header-item-address:hover,
-  .header-item-address:focus {
-    border-color: #030a06;
-  }
-  .header-tel {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #030a06;
-    font-style: normal;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header-email {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #030a06;
-    font-style: normal;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header-item-address:active {
-    border-bottom-color: #3ac04c;
-  }
-  .header-item-address:active .header-tel,
-  .header-tel:active {
-    color: #3ac04c;
-  }
-  .header-item-address:active .header-email,
-  .header-email:active {
-    color: #3ac04c;
   }
 }
