@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/system-eight-team-project/",
+    "build": "vite build --base=/125_html-css_NoobStyleee/",
     "preview": "vite preview"
   },
   "devDependencies": {
